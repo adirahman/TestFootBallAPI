@@ -1,4 +1,16 @@
+apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
+
+
+publish{
+
+    userOrg = 'rahmanadi9'
+    groupId = 'com.arc.cobabintray'
+    artifactId = 'cobaLibrary'
+    publishVersion = '0.0.1'
+    desc = 'simple lib android'
+    website = 'https://github.com/adirahman/TestFootBallAPI'
+}
 
 android {
     compileSdkVersion 28
@@ -40,3 +52,5 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:3.7.0'
     implementation 'com.squareup.okhttp:okhttp-urlconnection:2.2.0'
 }
+
+
